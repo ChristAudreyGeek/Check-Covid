@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ActivityMainPrimature">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Actions"
+                            android:fontFamily="@font/avenir_bold"
+                            android:textSize="16dp"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="du gouvernement"
+                            android:fontFamily="@font/avenir_extrabold"
+                            android:textSize="18dp"
+                            />
+
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:scrollbars="none"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+                                android:layout_width="120dp"
+                                android:layout_height="150dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="15dp"
+                                app:corner_radius="8dp"
+                                >
+
+                                <ImageView
+                                    android:scaleType="centerCrop"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/economie"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Economie"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_margin="8dp"
+                                    android:fontFamily="@font/avenir_regular"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp"/>
+
+                            </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+                            <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+                                android:layout_width="120dp"
+                                android:layout_height="150dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="8dp"
+                                app:corner_radius="8dp"
+                                >
+
+                                <ImageView
+                                    android:scaleType="centerCrop"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/infra"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Infrastructure"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_margin="8dp"
+                                    android:fontFamily="@font/avenir_regular"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp"/>
+
+                            </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+                            <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+                                android:layout_width="120dp"
+                                android:layout_height="150dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="8dp"
+                                app:corner_radius="8dp"
+                                >
+
+                                <ImageView
+                                    android:scaleType="centerCrop"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/souveraite"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Souverainté"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_margin="8dp"
+                                    android:fontFamily="@font/avenir_regular"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp"/>
+
+                            </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+                            <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+                                android:layout_marginRight="15dp"
+                                android:layout_width="120dp"
+                                android:layout_height="150dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="8dp"
+                                app:corner_radius="8dp"
+                                >
+
+                                <ImageView
+                                    android:scaleType="centerCrop"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/social"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Social"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_margin="8dp"
+                                    android:fontFamily="@font/avenir_regular"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp"/>
+
+                            </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Annonces"
+                        android:fontFamily="@font/avenir_bold"
+                        android:textSize="16dp"
+                        />
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="actualités"
+                        android:fontFamily="@font/avenir_extrabold"
+                        android:textSize="18dp"
+                        />
+
+                </LinearLayout>
+
+                <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/click"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="7dp"
+                    app:corner_radius="10dp"
+                    android:visibility="visible"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:elevation="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:src="@drawable/actu_une"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/avenir_bold"
+                        android:text="Audience avec l’Ambassadeur de l’Algérie au Congo"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:layout_marginTop="3.5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="#454545"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:text="Ce Mardi 12 Octobre 2021 , à l’hôtel de la Primature, le Premier Ministre, Chef Gouvernement Anatole Collinet MAKOSSO a reçu en audience l’Ambassadeur de l’Algérie au Congo SEM Mohamed Benattou puis, l’Ambassadeur de la Turquie au Congo SEM Serhan Ali Yigit. Avec les deux diplomates, le Premier Ministre a fait un tour d’horizon des relations diplomatiques entre les Etats."
+                        android:fontFamily="@font/avenir_bold"/>
+
+                    <RelativeLayout
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <LinearLayout
+                            android:layout_marginTop="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="27dp"
+                                android:layout_height="27dp"
+                                android:src="@drawable/sceau"/>
+
+                            <TextView
+                                android:fontFamily="@font/avenir_bold"
+                                android:textColor="#454545"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="12dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Primature"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible"
+                            android:layout_marginTop="5dp"
+                            >
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="4dp"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="22dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/partager_send"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:layout_marginLeft="3dp"
+                                    android:visibility="gone"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="0"/>
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_marginLeft="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:src="@drawable/commentair"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:visibility="gone"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="0"/>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="14dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:src="@drawable/ic_baseline_more_vert_24"/>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:visibility="gone"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp" />
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+
+                </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+                <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="7dp"
+                    app:corner_radius="10dp"
+                    android:visibility="visible"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:elevation="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:src="@drawable/actu_trois"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/avenir_bold"
+                        android:text="ballet Diplomatique à l’hôtel de la Primature"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:layout_marginTop="3.5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="#454545"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:text="Véritable ballet Diplomatique à l’hôtel de la Primature où le Premier Ministre, Chef du Gouvernement Anatole Collinet Makosso a eu aussi des échanges avec SEM Giacomo Durazzo, Ambassadeur et Chef de la Délégation de l’Union Européenne en République du Congo et Mme Marega Barry Fatoumata représentante de l’UNESCO au Congo."
+                        android:fontFamily="@font/avenir_bold"/>
+
+                    <RelativeLayout
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <LinearLayout
+                            android:layout_marginTop="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="27dp"
+                                android:layout_height="27dp"
+                                android:src="@drawable/sceau"/>
+
+                            <TextView
+                                android:fontFamily="@font/avenir_bold"
+                                android:textColor="#454545"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="12dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Primature"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible"
+                            android:layout_marginTop="5dp"
+                            >
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="4dp"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="22dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/partager_send"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:layout_marginLeft="3dp"
+                                    android:visibility="gone"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="0"/>
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_marginLeft="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:src="@drawable/commentair"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:visibility="gone"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="0"/>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="14dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:src="@drawable/ic_baseline_more_vert_24"/>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:visibility="gone"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp" />
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+
+                </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+                <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="80dp"
+                    app:corner_radius="10dp"
+                    android:visibility="visible"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:elevation="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:src="@drawable/actu_quatre"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/avenir_bold"
+                        android:text="Opération Coup de Poing à Pointe-Noire"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:layout_marginTop="3.5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="#454545"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:text="@string/description"
+                        android:fontFamily="@font/avenir_bold"/>
+
+                    <RelativeLayout
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <LinearLayout
+                            android:layout_marginTop="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="27dp"
+                                android:layout_height="27dp"
+                                android:src="@drawable/sceau"/>
+
+                            <TextView
+                                android:fontFamily="@font/avenir_bold"
+                                android:textColor="#454545"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="12dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Primature"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible"
+                            android:layout_marginTop="5dp"
+                            >
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="4dp"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="22dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/partager_send"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:layout_marginLeft="3dp"
+                                    android:visibility="gone"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="0"/>
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_marginLeft="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:src="@drawable/commentair"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:visibility="gone"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="0"/>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="14dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:src="@drawable/ic_baseline_more_vert_24"/>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:visibility="gone"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp" />
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+
+                </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16sp"
+        android:layout_marginBottom="90dp"
+        android:src="@drawable/ic_baseline_message_24"
+        android:background="@color/vert"/>
+
+
+</RelativeLayout>

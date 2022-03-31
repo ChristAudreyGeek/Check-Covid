@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">moduleaddvaccin</string>
+    <string name="johnson_johson"><![CDATA[Johnson & Johson]]></string>
+    <string name="title_activity_principale">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_plein">Son oeuvre de réconciliation nationale, à la fin des années 1990, lui a valu la reconnaissance de pacificateur, consulté sur de diverses crises. Il a activement pris part aux négociations de paix mettant fin à la guerre civile en Angola, à l’apartheid en Afrique du Sud et ayant conduit à l’indépendance de la Namibie et à la libération de Nelson Mandela.</string>
+    <string name="description">Arrivé à Pointe-Noire ce samedi 23 Octobre 2021 par le régulier de Trans Air Congo, le Premier Ministre, Chef du Gouvernement Anatole Collinet Makosso s’est adressé aux autorités départementales, aux représentants de la force publique, aux confessions religieuses, et à la société civile au sens large. Au cours de cette rencontre, le seul point à l’ordre du jour était l’opération « Coup de Poing » lancée par le gouvernement afin de resserrer les mesures de lutte contre la pandémie à Covid-19.</string>
+
+
+    <string name="description_deux">Ce Mardi 12 Octobre 2021 , à l’hôtel de la Primature, le Premier Ministre, Chef Gouvernement Anatole Collinet MAKOSSO a reçu en audience l’Ambassadeur de l’Algérie au Congo SEM Mohamed Benattou puis, l’Ambassadeur de la Turquie au Congo SEM Serhan Ali Yigit. Avec les deux diplomates, le Premier Ministre a fait un tour d’horizon des relations diplomatiques entre les Etats. \n\nAprès six (6) ans au Congo, SEM Mohamed Benattou est venu faire ses adieux au Chef du Gouvernement sur fond d’excellentes relations diplomatiques entre l’Algérie et le Congo. L’Ambassadeur d’Algerie a en outre réitéré le message du Premier Ministre Algérien annonçant la volonté de renforcer les relations politique et diplomatique entre les deux pays.</string>
+
+</resources>

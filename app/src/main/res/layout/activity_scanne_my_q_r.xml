@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityScanneMyQR">
+
+    <LinearLayout
+        android:id="@+id/demande_scanne"
+        android:visibility="visible"
+        android:background="#D1D1D1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <ImageView
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/image_kris"/>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/round"
+            android:layout_alignParentBottom="true">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenir_extrabold"
+                        android:text="CERTIFICAT COVID"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="30dp"
+                        android:textSize="18dp"/>
+
+                    <LinearLayout
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="25sp"
+                        android:layout_width="match_parent"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/btn_formulairevertflou"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_check_24"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:gravity="center_vertical"
+                            android:fontFamily="@font/avenir_extrabold"
+                            android:text="Vérification réussi"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="12dp"
+                            android:textSize="18dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="15sp"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/btn_formulairevertflouflou"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_outline_info_24"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="30sp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/avenir_regular"
+                            android:text="Valable uniquement avec une piéce d'identité"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/infos_deux"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/avenir_extrabold"
+                                android:text=""
+                                android:layout_marginLeft="50dp"
+                                android:textColor="@color/black"
+                                android:id="@+id/nom"
+                                android:layout_marginTop="40dp"
+                                android:textSize="24dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/avenir_regular"
+                                android:text="Nom"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginTop="2dp"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/avenir_extrabold"
+                                android:text=""
+                                android:layout_marginLeft="50dp"
+                                android:id="@+id/prenom"
+                                android:textColor="@color/black"
+                                android:layout_marginTop="40dp"
+                                android:textSize="24dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/avenir_regular"
+                                android:text="Prénom"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginTop="2dp"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/avenir_extrabold"
+                                android:text=""
+                                android:layout_marginLeft="50dp"
+                                android:textColor="@color/black"
+                                android:layout_marginTop="40dp"
+                                android:id="@+id/genre"
+                                android:textSize="24dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/avenir_regular"
+                                android:text="Genre"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginTop="2dp"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"/>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="40dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/avenir_extrabold"
+                                    android:text="Janssen"
+                                    android:layout_marginLeft="50dp"
+                                    android:textColor="@color/black"
+                                    android:id="@+id/vaccin"
+                                    android:textSize="24dp"/>
+
+
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/avenir_regular"
+                                    android:text="Vaccin"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginTop="2dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="20dp"/>
+
+                                <TextView
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="30dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_width="wrap_content"
+                                    android:id="@+id/date"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/avenir_regular"
+                                    android:text="administré le 21-octobre-2021"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="2dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"/>
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/avenir_regular"
+                                android:text="1ére dose"
+                                android:layout_marginLeft="50dp"
+                                android:id="@+id/dose"
+                                android:layout_marginTop="2dp"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"/>
+
+                            <TextView
+                                android:layout_marginTop="40dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Presenté votre code QR pour validé votre attestation de vaccination"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/avenir_extrabold"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"/>
+
+                            <ImageView
+                                android:layout_marginBottom="20sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/qrcode"
+                                android:adjustViewBounds="true"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="25dp"
+                                android:visibility="gone"
+                                android:layout_marginRight="25dp"
+                                android:id="@+id/enregistré"
+                                android:background="@drawable/btn_form"
+                                android:layout_marginTop="40dp">
+
+                                <TextView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/avenir_extrabold"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="20sp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textSize="20dp"
+                                    android:layout_centerInParent="true"
+                                    android:text="Enregistré le certificats"/>
+
+
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:visibility="invisible"
+                            android:id="@+id/infos_trois"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:layout_marginTop="30dp"
+                                android:id="@+id/is_profil">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:src="@drawable/avatar"
+                                    app:civ_border_color="@color/grise_flou_flou"
+                                    app:civ_border_width="0.7dp"
+                                    android:id="@+id/img_utilisateur"/>
+
+                                <TextView
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="@font/avenir_extrabold"
+                                    android:textSize="18dp"
+                                    android:id="@+id/name"
+                                    android:textColor="@color/black"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Christ Audrey"/>
+
+                                <TextView
+                                    android:layout_marginTop="12dp"
+                                    android:fontFamily="@font/avenir_bold"
+                                    android:textSize="18dp"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/black"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="center"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_marginRight="25dp"
+                                    android:text="Le nom et la photo en dessus sont ceux de l’utilisateur en cour, ils peuvent être différente des informations contenues dans le QR code qui ne sont valable qu’avec une pièce d’identité."/>
+
+                            </LinearLayout>
+
+
+
+
+                            <TextView
+                                android:layout_marginTop="40dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Presenté votre code QR pour validé votre attestation de vaccination"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/avenir_extrabold"
+                                android:textColor="@color/black"
+                                android:textSize="18dp"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/qrcodedeux"
+                                android:adjustViewBounds="true"/>
+
+                            <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center"
+                                android:id="@+id/verifier"
+                                android:layout_height="40dp"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:layout_marginBottom="10dp"
+                                android:elevation="3dp"
+                                android:gravity="center"
+                                android:background="@color/grise_flou_flou"
+                                app:corner_radius="20dp">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/scannewindows"/>
+
+                                <TextView
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/avenir_bold"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="10sp"
+                                    android:textSize="16dp"
+                                    android:text="Plus de details"/>
+
+
+
+                            </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:id="@+id/creation_compte"
+                                android:orientation="vertical"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/avenir_bold"
+                                    android:textSize="18sp"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/black"
+                                    android:layout_marginRight="25dp"
+                                    android:layout_marginLeft="25dp"
+                                    android:textAlignment="center"
+                                    android:text="Créer un compte pour bénéficier pleinement de l’application "
+                                    android:layout_marginTop="8dp"/>
+
+                                <LinearLayout
+                                    android:layout_marginTop="20dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <RelativeLayout
+                                        android:layout_marginBottom="20dp"
+                                        android:layout_weight="1"
+                                        android:id="@+id/phone_number"
+                                        android:layout_marginEnd="8dp"
+                                        android:layout_marginStart="30dp"
+                                        android:elevation="4dp"
+                                        android:background="@drawable/background_with_btn"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="35dp"
+                                        >
+
+                                        <LinearLayout
+                                            android:paddingRight="15dp"
+                                            android:paddingLeft="15dp"
+                                            android:layout_width="150dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:orientation="horizontal">
+
+                                            <ImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/ic_round_phone_24"/>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/avenir_bold"
+                                                android:textColor="@color/black"
+                                                android:textSize="12sp"
+                                                android:layout_gravity="center"
+                                                android:layout_marginStart="5dp"
+                                                android:text="Phone number"/>
+
+                                        </LinearLayout>
+
+
+
+                                    </RelativeLayout>
+
+
+                                    <RelativeLayout
+                                        android:layout_marginBottom="20dp"
+                                        android:layout_weight="1"
+                                        android:paddingRight="15dp"
+                                        android:paddingLeft="15dp"
+                                        android:layout_marginStart="8dp"
+                                        android:id="@+id/google"
+                                        android:layout_marginEnd="30dp"
+                                        android:elevation="4dp"
+                                        android:background="@drawable/background_with_btn"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="35dp"
+                                        >
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:orientation="horizontal">
+
+                                            <ImageView
+                                                android:layout_width="24dp"
+                                                android:layout_height="24dp"
+                                                android:src="@drawable/icon_google"/>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/avenir_bold"
+                                                android:layout_marginStart="10dp"
+                                                android:layout_gravity="center"
+                                                android:textColor="@color/black"
+                                                android:textSize="12dp"
+                                                android:text="Google"/>
+
+                                        </LinearLayout>
+
+
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="25dp"
+                                android:visibility="gone"
+                                android:layout_marginRight="25dp"
+                                android:id="@+id/enregistrédeux"
+                                android:background="@drawable/btn_form"
+                                android:layout_marginTop="40dp">
+
+                                <TextView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/avenir_extrabold"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="20sp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textSize="18dp"
+                                    android:layout_centerInParent="true"
+                                    android:text="Enregistré le certificat"/>
+
+
+
+                            </RelativeLayout>
+
+                            <ProgressBar
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/progres"/>
+
+                            <WebView
+                                android:layout_marginTop="25dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/mywebview"
+                                tools:ignore="WebViewLayout" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:layout_marginTop="25dp"
+                                android:id="@+id/imageweb"/>
+
+                            <TextView
+                                android:textSize="16sp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:id="@+id/txt_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/avenir_bold"
+                                android:textColor="@color/black"/>
+
+
+
+                        </LinearLayout>
+
+                        <ProgressBar
+                            android:id="@+id/progress_bar"
+                            android:layout_width="35dp"
+                            android:visibility="visible"
+                            android:layout_marginTop="120dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_height="35dp"/>
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

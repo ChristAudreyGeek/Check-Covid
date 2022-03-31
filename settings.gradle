@@ -1,0 +1,3 @@
+include ':moduleaddvaccin'
+include ':app'
+rootProject.name = "PayementMobilProject"

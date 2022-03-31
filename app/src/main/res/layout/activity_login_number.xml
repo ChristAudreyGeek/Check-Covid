@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ActivityLoginNumber">
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/linear_entry_number"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:text="Connexion par numéro"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/avenir_extrabold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="1dp"
+            android:textAlignment="center"
+            android:text="Entrer votre numéro de téléphone pour vous connecter"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/avenir_bold"/>
+
+        <LinearLayout
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <com.hbb20.CountryCodePicker
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:ccp_textSize="11sp"
+                android:layout_gravity="bottom"
+                app:ccp_contentColor="@color/black"
+                app:ccpDialog_textColor="@color/black"
+                android:layout_marginRight="5dp"
+                app:ccpDialog_background="@color/grise_flou_flou"
+                android:backgroundTint="@color/grise_flou_flou"
+                android:background="@drawable/btn_formulairevertflouflouu"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_defaultNameCode="US"
+                android:id="@+id/ccp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="50dp"
+                android:id="@+id/inputlayoutpasseword"
+                android:theme="@style/mythemeblack"
+                android:textColorHint="#888888"
+                >
+
+                <EditText
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/phonetext"
+                    android:hint="  Numéro de téléphone"
+                    android:textSize="15sp"
+                    android:paddingStart="8dp"
+                    android:inputType="phone"
+                    android:fontFamily="@font/avenir_extrabold"
+                    android:textColorHint="#B5454545"
+                    android:background="@drawable/btn_formulairevertflouflouu"
+                    android:textColor="@color/black"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/btn_send_number"
+            android:text="Recevoir le code"
+            android:fontFamily="@font/avenir_bold"
+            android:textAllCaps="true"
+            android:background="@drawable/btn_formulairevertflouflou"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/linear_send_code"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:text="Verification de code"
+                android:fontFamily="@font/avenir_extrabold"
+                android:layout_marginTop="25dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir_bold"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:text="Entrer le code de verification, délai de verification 60 secondes."/>
+
+
+            <com.goodiebag.pinview.Pinview
+                android:id="@+id/pinview"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/black"
+                app:pinWidth="35dp"
+                app:pinHeight="35dp"
+                app:pinLength="6"
+                android:theme="@style/mythemeblack"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cursorVisible="true"
+                android:layout_marginTop="30dp"
+                app:forceKeyboard="true"
+                app:hint="0"
+                app:inputType="number"
+                app:password="false"/>
+
+
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_extrabold"
+                    android:layout_marginStart="25dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:text="Changer de numero !"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_extrabold"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/txt_number"
+                    android:text=""/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_bold"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Délai d'axpiration"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_bold"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14dp"
+                    android:id="@+id/txt_delai"
+                    android:textColor="@color/black"
+                    android:text="01:00"/>
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_marginTop="35dp"
+                android:id="@+id/btn_valide_code"
+                android:text="Valider le code"
+                android:fontFamily="@font/avenir_bold"
+                android:textAllCaps="true"
+                android:background="@drawable/btn_formulairevertflouflou"/>
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginBottom="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/icon_google"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Essayer la connexion par google"
+                android:layout_gravity="center"
+                android:textSize="15dp"
+                android:fontFamily="@font/avenir_bold"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

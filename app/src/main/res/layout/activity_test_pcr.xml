@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grise_flou_flou"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Mythem_quatre"
+    tools:context=".ActivityTestPcr">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/sortie"
+            android:layout_centerVertical="true"
+            android:src="@drawable/left"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/avenir_extrabold"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black"
+            android:text="Test PCR"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_formwhite">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:visibility="gone"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/data_liste"/>
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:id="@+id/no_notifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/vaccination"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/avenir_extrabold"
+                        android:text="Test PCR"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/avenir_bold"
+                        android:textAlignment="center"
+                        android:text="Aucun test PCR, si vous avez effectué un test PCR Récemment,Veuillez patienter, il vous sera délivré via l'application dans les 12h qui suivent"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/btn_formulairevertflouflougrise"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/avenir_extrabold"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20sp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="18dp"
+                        android:text="Vérification"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:background="#D3D3D3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/avenir_regular"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20sp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="18dp"
+                        android:text="Le code QR généré par votre test pcr sera scanné afin de vérifier son authenticité"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/btn_formulairevertflouflougrise"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/avenir_extrabold"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20sp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="18dp"
+                        android:text="Dureé"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:background="#D3D3D3"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/avenir_regular"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20sp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="18dp"
+                        android:text="Le test PCR s'autosupprime une fois arrivé à sa date d'expiratoin "/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/btn_formulairevertflouflougrise"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/avenir_extrabold"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20sp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="18dp"
+                        android:text="Fiabilité"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:background="#D3D3D3"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/avenir_regular"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20sp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="18dp"
+                        android:text="Après la durée de validation dépassé les données contenues dans le test PCR sont automatiquement supprimés de l’application"/>
+
+
+                </LinearLayout>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/vert"
+                    android:backgroundTint="@color/vert"
+                    android:id="@+id/add"
+                    android:visibility="gone"
+                    android:theme="@style/Mytheme"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="16sp"
+                    android:src="@drawable/ic_baseline_add_24"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:background="@drawable/background_with_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="Confirmer la demande"
+                android:fontFamily="@font/avenir_extrabold"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="15dp"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/close"
+                android:id="@+id/close"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/grise_flou_flou"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:textAlignment="center"
+            android:text="Makélékélé étes vous sur ? Vous allez recevoir une confirmation de rendez-vous dans un centre le moins saturé dans cette arrondissement"
+            android:id="@+id/txt_confirmer"
+            android:fontFamily="@font/avenir_bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/grise_flou_flou"/>
+
+        <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            app:corner_radius="10dp"
+            android:id="@+id/confirmer"
+            android:background="@drawable/btn_formulairevertflouflouuenver"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir_extrabold"
+                android:text="Confirmer"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/vert"
+                android:textSize="18dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:textAllCaps="false"/>
+
+        </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>

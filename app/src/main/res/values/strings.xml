@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Check Covid</string>
+
+
+    <string name="descript_une">
+        \n
+        L\'application vous permet de conserver en toute sécurité des certificats COVID sur votre téléphone et de les présenter facilement.</string>
+
+    <string name="descript_deux">
+        \n
+        Les certificats COVID peuvent facilement être ajoutés dans l\'application et conservés numériquement.</string>
+
+    <string name="descript_trois">
+        \n
+        Les données contenues dans le certificats le sont egalement dans le code QR</string>
+
+    <string name="descript_trois_trois">
+        \n
+        L\orsque vous le présenter. Le code QR sera lu avec une application qui vérifiera automatiquement l\'exactitude et la validité des données .</string>
+
+    <string name="descript_quatre">
+        \n
+        Les certificats sont uniquement stockés localement sur votre téléphone. Les données ne sont pas enregistrées dans un système central.</string>
+    <string name="cr_votre_compte_pour_commencer">Créer un compte utilisateur pour commencer</string>
+    <string name="custom_txt">Editez\nvotre compte utilisateur</string>
+    <string name="txt_vaccin">Prendre rendez-vous où se faire vacciner près\nde chez vous </string>
+    <string name="txt_vaccina">La vaccination pourrait, par exemple être proposée dans les lieux suivants situés à proximité de chez vous : </string>
+    <string name="channel_name">Koyekola notification</string>
+    <string name="channel_description">Koyekola</string>
+    <string name="notification_title">notification_title</string>
+    <string name="default_notification_channel_id">notification une</string>
+
+</resources>

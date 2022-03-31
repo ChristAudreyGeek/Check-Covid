@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PayementMobilProject" parent="Theme.AppCompat.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#A8A8A8</item>
+        <item name="colorPrimaryVariant">#A8A8A8</item>
+        <item name="colorOnPrimary">#A8A8A8</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/vert</item>
+        <item name="colorSecondaryVariant">@color/vert</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:navigationBarColor">@color/vert</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Mytheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#D1D1D1</item>
+        <item name="colorPrimaryVariant">#D1D1D1</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/vert</item>
+        <item name="colorSecondaryVariant">@color/vert</item>
+        <item name="colorOnSecondary">@color/vert</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="Mythem_deux" parent="Theme.AppCompat.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/vert</item>
+        <item name="colorSecondaryVariant">@color/vert</item>
+        <item name="colorOnSecondary">@color/vert</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
